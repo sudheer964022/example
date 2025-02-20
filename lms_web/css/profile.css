@@ -1,0 +1,121 @@
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: scroll;
+    margin-bottom: 10%;
+}
+/* Centering Profile Container */
+.profile-container {
+    width: 100vw;
+    max-width: 800px;
+    padding: 60px 50px;
+    background: rgb(246, 246, 246);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.276);
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .profile-container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile-container {
+        width: 70vw;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-container {
+        width: 60vw;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 300px) {
+    .profile-container {
+        width: 50vw;
+        padding-left: 50px;
+    }
+}
+
+
+.card {
+    background: #ffffffea;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: auto;
+    height: auto;
+    transition: width 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.614);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.614);
+    border-radius: 20px;
+}
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu li:hover {
+    background: #eeeeee;
+    border-radius: 20px;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu li.active .arrow {
+    transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+    }
+
+    .menu li {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .arrow {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu li {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .arrow {
+        font-size: 16px;
+    }
+}

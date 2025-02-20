@@ -1,0 +1,217 @@
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 0px 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    padding-left: 10px; /* Adjust logo size */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adds spacing between items */
+}
+
+.bell-icon {
+    height: 30px;
+    cursor: pointer;
+}
+.bell-icon:hover{
+    border-radius: 50%;
+    background-color: rgba(153, 153, 241, 0.429);
+}
+.padd{
+    padding-right: 10px;
+}
+.user-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #3e7cf7e2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    user-select: none; 
+    transition: background 0.3s ease;
+}
+
+.user-circle:hover {
+    background-color: #006af5;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 88px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 230px;
+    max-width: 250px;
+    padding: 5px;
+    z-index: 1000;
+    text-align: center;
+    border:0.5px solid black
+
+}
+
+.dropdown.show {
+    display: block;
+}
+
+
+
+.dropdown p {
+    font-family:"Algerian", serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+    user-select: none;
+
+}
+
+.dropdown a {
+    display: block;
+    color: #343333;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown a:hover {
+    background: #f0f0f0ec;
+    color: #343333;
+    border: 0.5px solid rgb(61, 60, 60);
+}
+
+
+.admin-badge,.user-badge{
+    font-size: 8px;
+    background-color: rgb(232, 170, 61);
+    color: black;
+    padding: 4px 4px;
+    border-radius: 4px;
+    margin-left: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.834);
+}
+
+.menu-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 32px;
+}
+.menu-icon-logout{
+    width: 18px;
+    height: 18px;
+    margin-right: 42px;
+}
+/* Logout Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    animation: fadeOut 1.5s forwards;
+}
+
+.banner {
+    position: fixed;
+    top: 60px; /* Exactly below the fixed header */
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to right, #0d3868, #4194fa);
+    color: white;
+    user-select: none;
+    text-align: left;
+    z-index: 999;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.banner h2 {
+   
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin:  0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.container {
+    height: calc(100vh - 70px); /* Adjust based on header height */
+    margin-top: 0px; /* Slight spacing */
+    padding: 20px 40px 20px 30px ;
+
+
+}
+
+#profile-container {
+    height: calc(100vh - 70px); /* Adjust height considering header */
+    width: 100vw;
+    margin-top: 10px; /* Space between header and profile content */
+}
+
+
+.back-btn {
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    font-weight: bold;
+    background-color: #ffffff0b;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #8686862b;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.467);
+
+}
+
+
+

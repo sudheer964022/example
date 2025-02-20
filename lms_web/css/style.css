@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Algerian", serif;
+    color: rgb(255, 123, 0);
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 30%;
+    padding-bottom: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('PICSART.png') no-repeat center center fixed;
+    background-size: contain;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin-top: 5px; 
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+
+        padding-top: 70%; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+
+        padding-top: 60%; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    body {
+        margin-top: 100px;
+        padding-top:50% ; 
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.767);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(81, 79, 79, 0.497);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (min-width: 1024px) {
+     .container {
+         max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 70%;
+        width: 90%;
+   }
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 85%;
+        width: 90%;
+   }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 95%;
+
+   }
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    user-select: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    align-items: center;
+    
+}
+
+.form-group input[type="password"] {
+    position: relative;
+}
+
+.form-group input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
+#showPassword {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle; 
+}
+
+
+label[for="showPassword"] {
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.btn {
+    padding: 12px 20px;
+    background: rgb(255, 106, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgb(255, 94, 0);
+}
+
+.link {
+    color: rgb(255, 94, 0);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px; 
+    text-align: center;
+    
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+.form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="email"],
+    .form-group select {
+        border: 3px solid #f9db9d;  
+        border-radius: 5px;      
+        padding: 10px;         
+        width: 100%;          
+        box-sizing: border-box;  
+        transition: all 0.3s ease;
+        font-weight: bold; 
+        color:#fc7703;
+    }
+
+    /* Focus state styling */
+    .form-group input[type="text"]:focus,
+    .form-group input[type="password"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group select:focus {
+        border-color: #fc7703;   
+        outline: none;  
+        color: #fc7703;          
+        box-shadow: 0 0 5px rgba(255, 247, 3, 0.5); 
+    }
+    .notification {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.0em;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .error {
+        background-color: #f44336;
+    }
+    .success {
+        background-color: #4caf50;
+        color: white;
+    }
+    
